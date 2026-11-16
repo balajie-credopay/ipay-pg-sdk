@@ -1,0 +1,24 @@
+{
+    "name": "ipay/paymentgateway",
+    "description": "A PHP library for the IPay payment gateway.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "IPay\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [
+        {
+            "name": "IPay",
+            "email": "support@ipay.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
