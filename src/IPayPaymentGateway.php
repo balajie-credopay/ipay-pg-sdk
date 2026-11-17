@@ -42,7 +42,7 @@ class IPayPaymentGateway {
             'Release: ' . php_uname('r'),
             'Version: ' . phpversion(),
             'Machine: ' . php_uname('m'),
-            'Processor: ' . php_uname('p'),
+            'Processor: ' . php_uname('m'),
             'Hostname: ' . gethostname(),
             'IP-Address: ' . gethostbyname(gethostname())
         ]);
