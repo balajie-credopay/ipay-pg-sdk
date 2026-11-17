@@ -1,6 +1,6 @@
-# SalisPay Payment Gateway
+# IPay Payment Gateway
 
-SalisPay Payment Gateway is a PHP library that provides an easy-to-use interface for interacting with the SaliPay payment gateway API. This library allows you to create orders, check order statuses, and manage transactions securely and efficiently.
+IPay Payment Gateway is a PHP library that provides an easy-to-use interface for interacting with the SaliPay payment gateway API. This library allows you to create orders, check order statuses, and manage transactions securely and efficiently.
 
 ## Installation
 
@@ -8,13 +8,13 @@ You can install the package via Composer. Run the following command:
 
 ```bash
 
-composer require salispay/paymentgateway
+composer require ipay/paymentgateway
 
 ```
 
 ## Features
 
-* **Order Management**: Create and manage orders through SalisPay.
+* **Order Management**: Create and manage orders through IPay.
 * **Transaction Management**: Handle transactions with ease.
 * **Secure Authentication**: Uses secure basic authentication for API requests.
 * **System Information**: Attaches system and server information to each request for better tracking and security.
@@ -24,7 +24,7 @@ composer require salispay/paymentgateway
 &#x20;   - PHP 8.2 or higher
 - Composer
 - cURL extension enabled
-- SalisPay API credentials (Client ID and Client Secret)
+- IPay API credentials (Client ID and Client Secret)
 
 
 
@@ -35,13 +35,13 @@ composer require salispay/paymentgateway
 ```php
 require 'vendor/autoload.php';
 
-use SalisPay\SalisPayPaymentGateway;
-use SalisPay\Resources\OrderAPI;
+use IPay\IPayPaymentGateway;
+use IPay\Resources\OrderAPI;
 
 // Initialize the payment gateway
 $clientId = 'your-client-id';
 $clientSecret = 'your-client-secret';
-$gateway = new SalisPayPaymentGateway($clientId, $clientSecret);
+$gateway = new IPayPaymentGateway($clientId, $clientSecret);
 
 // Initialize the OrderAPI
 $orderAPI = new OrderAPI($gateway);
@@ -274,9 +274,9 @@ try {
 
 ## API Endpoints
 
-&#x20;   - Create Order: POST https://bnapi.salispay.om/nac/api/v1/pg/orders/create-checkout
+&#x20;   - Create Order: POST https://pgw-api-uat.ipay.com.qa/nac/api/v1/pg/orders/create-checkout
 
-&#x20;   - Check Order Status: GET https://bnapi.salispay.om/nac/api/v1/pg/orders/check-status
+&#x20;   - Check Order Status: GET https://pgw-api-uat.ipay.com.qa/nac/api/v1/pg/orders/check-status
 
 
 ## Project Structure
@@ -297,7 +297,7 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 
 /nac/api/v1/pg/orders/create-checkout
 
-&#x20;   - Check Order Status: GET https://bnapi.salispay.om/nac/api/v1/pg/orders/check-status
+&#x20;   - Check Order Status: GET https://pgw-api-uat.ipay.com.qa/nac/api/v1/pg/orders/check-status
 
 
 
@@ -307,7 +307,7 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 
 src/
 ├── Config.php            # Contains API endpoints and configurations
-├── SalisPayPaymentGateway.php  # Handles HTTP requests
+├── IPayPaymentGateway.php  # Handles HTTP requests
 └── resources/
     ├── OrderAPI.php      # Methods for order operations
     └── TransactionAPI.php # Placeholder for future enhancements
@@ -319,7 +319,7 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 
 /nac/api/v1/pg/orders/create-checkout
 
-&#x20;   - Check Order Status: GET https://bnapi.salispay.om/nac/api/v1/pg/orders/check-status
+&#x20;   - Check Order Status: GET https://pgw-api-uat.ipay.com.qa/nac/api/v1/pg/orders/check-status
 
 
 
@@ -331,7 +331,7 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 
 src/
 ├── Config.php            # Contains API endpoints and configurations
-├── SalisPayPaymentGateway.php  # Handles HTTP requests
+├── IPayPaymentGateway.php  # Handles HTTP requests
 └── resources/
     ├── OrderAPI.php      # Methods for order operations
     └── TransactionAPI.php # Placeholder for future enhancements
