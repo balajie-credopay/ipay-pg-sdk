@@ -20,23 +20,7 @@
         "php": ">=7.4",
         "ext-json": "*",
         "ext-curl": "*"
-    },{
-    "name": "ipay/test-project",
-    "description": "iPay SDK testing project",
-    "type": "project",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../ipay/ipay-pg-sdk-main",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
-    "require": {
-        "ipay/paymentgateway": "^1.0"
-    }
-}
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
