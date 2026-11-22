@@ -11,11 +11,14 @@ You can install the package via Composer. Run the following command:
 composer require ipay/paymentgateway
 
 ```
-<!-- ## Sample Integration Setup
+
+## Sample Integration Setup
 
 After installing the package using Composer, create a PHP file named UsageExample.php in your project root directory.
 
 Your project structure should look like this:
+
+```graphql
 
 your-project/
 ├── vendor/
@@ -24,21 +27,22 @@ your-project/
 │       └── paymentgateway/
 ├── composer.json
 ├── composer.lock
-└── UsageExample.php
+└── UsageExample.phps
 
-Add the following code at the beginning of your UsageExample.php file to load the SDK:
-
-<?php
+```php
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 use IPay\IPayPaymentGateway;
 
+```
 You can now use the SDK to initialize the payment gateway, create orders, and check order statuses.
 
 To execute your integration example, run:
 
-php UsageExample.php -->
+php UsageExample.php
+
+```
 
 ## Features
 
@@ -138,6 +142,4 @@ src/
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests to enhance the library.
-
-
 
