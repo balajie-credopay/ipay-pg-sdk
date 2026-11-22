@@ -11,7 +11,7 @@ You can install the package via Composer. Run the following command:
 composer require ipay/paymentgateway
 
 ```
-## Sample Integration Setup
+<!-- ## Sample Integration Setup
 
 After installing the package using Composer, create a PHP file named UsageExample.php in your project root directory.
 
@@ -38,7 +38,7 @@ You can now use the SDK to initialize the payment gateway, create orders, and ch
 
 To execute your integration example, run:
 
-php UsageExample.php
+php UsageExample.php -->
 
 ## Features
 
